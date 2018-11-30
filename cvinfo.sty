@@ -1,0 +1,147 @@
+% !TEX program = lualatex
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cvinfo}[2017/11/22 CV info package]
+
+\RequirePackage{xparse}
+\RequirePackage{luacode}
+
+% Declare main functions
+\luadirect{
+    PathLib = dofile (kpse.find_file ('path.lua'))
+    Json = dofile (kpse.find_file ('json.lua'))
+    function get_path (file)
+        return PathLib.path (file)
+    end
+    table = {}
+    function load_info (file)
+        local filepath = get_path (file)
+        local jsonfile = io.open (filepath)
+        local config = jsonfile:read ('*all')
+        jsonfile:close ()
+        table = Json.parse (config)
+    end
+}
+
+\NewDocumentEnvironment{loadinfo}{m}{%
+   \luadirect{load_info ('#1')}%
+    
+    \newcommand{\ctcname}[1] {
+        \luadirect{tex.print (table['contact']['name'][##1])}\ignorespaces%
+    }
+
+    \newcommand{\ctccellphone} {
+        \luadirect{tex.print (table['contact']['cellphone'])}\ignorespaces%
+    }
+
+    \newcommand{\ctcemail} {
+        \luadirect{tex.print (table['contact']['email'])}\ignorespaces%
+    }
+
+    \newcommand{\ctcgithub} {
+        \luadirect{tex.print (table['contact']['github'])}\ignorespaces%
+    }
+
+    \newcommand{\ctcgitlab} {
+        \luadirect{tex.print (table['contact']['gitlab'])}\ignorespaces%
+    }
+
+    \newcommand{\ctcfacebook} {
+        \luadirect{tex.print (table['contact']['facebook'])}\ignorespaces%
+    }
+
+    \newcommand{\ctcaddress}[1] {
+        \luadirect{tex.print (table['contact']['address']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\ctccity} {
+        \luadirect{tex.print (table['contact']['city'])}\ignorespaces%
+    }
+
+    \newcommand{\ctcstate} {
+        \luadirect{tex.print (table['contact']['state'])}\ignorespaces%
+    }
+
+    \newcommand{\ctccountry}[1] {
+        \luadirect{tex.print (table['contact']['country']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\ctcabout}[1] {
+        \luadirect{tex.print (table['contact']['about']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\kwdedutitle}[1] {
+        \luadirect{tex.print (table['education']['keyword-title']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\edulocal}[1] {
+        \luadirect{tex.print (table['education']['local']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\eduuniversity}[1] {
+        \luadirect{tex.print (table['education']['university']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\eduperiod}[1] {
+        \luadirect{tex.print (table['education']['period']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\edumajor}[1] {
+        \luadirect{tex.print (table['education']['major']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\edugrade}[1] {
+        \luadirect{tex.print (table['education']['grade']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\kwdwrktitle}[1] {
+        \luadirect{tex.print (table['employment']['keyword-title']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\wrkn}{
+        \luadirect{tex.print (table['employment']['works-n'])}\ignorespaces%
+    }
+
+    \newcommand{\wrknpone}{
+        \luadirect{tex.print (table['employment']['works-npone'])}\ignorespaces%
+    }
+
+    \newcommand{\wrktype}[2] {
+        \luadirect{tex.print (table['employment']['works'][##2]['type']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\wrkemployer}[2] {
+        \luadirect{tex.print (table['employment']['works'][##2]['employer']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\wrkperiod}[2] {
+        \luadirect{tex.print (table['employment']['works'][##2]['period']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\wrktitle}[2] {
+        \luadirect{tex.print (table['employment']['works'][##2]['title']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\wrkinfo}[2] {
+        \luadirect{tex.print (table['employment']['works'][##2]['info']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\kwdskltitle}[1] {
+        \luadirect{tex.print (table['skills']['keyword-title']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\kwdsklstrong}[1] {%
+        \luadirect{tex.print (table['skills']['keyword-strong']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\kwdsklknowledgeable}[1] {%
+        \luadirect{tex.print (table['skills']['keyword-knowledgeable']['##1'])}\ignorespaces%
+    }
+
+    \newcommand{\sklstrong} {
+        \luadirect{tex.print (table['skills']['strong'])}\ignorespaces%
+    }
+
+    \newcommand{\sklknowledgeable} {
+        \luadirect{tex.print (table['skills']['knowledgeable'])}\ignorespaces%
+    }
+}{}
