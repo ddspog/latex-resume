@@ -1,10 +1,22 @@
 {
     "contact": {
-        "name": [
-            "Dênnis",
-            "Sousa",
-            "Dênnis Sousa"
-        ],
+        "name": {
+        	"EN": [
+	            "Dênnis",
+	            "Sousa",
+	            "Dênnis Sousa"
+	        ],
+	        "PT": [
+	            "Dênnis",
+	            "Sousa",
+	            "Dênnis Sousa"
+	        ],
+	        "FR": [
+	            "Dênnis",
+	            "Sousa",
+	            "Sousa, Dênnis"
+	        ]
+        },
         "cellphone": "+55 83 98650 8421",
         "email": "ddspog@gmail.com",
         "github": "ddspog",
@@ -12,49 +24,60 @@
         "facebook": "ddspog",
         "address": {
             "EN": "117 Dr Francisco Lima Neto",
-            "PT": "Rua Dr Francisco Lima Neto, 117"
+            "PT": "Rua Dr Francisco Lima Neto, 117",
+            "FR": "117 Rue Dr Francisco Lima Neto"
         },
         "city": "Campina Grande",
         "state": "PB",
         "country": {
             "EN": "Brazil",
-            "PT": "Brasil"
+            "PT": "Brasil",
+            "FR": "Brésil"
         },
         "about": {
             "EN": "A new developer that likes optimizing stuff, and researching about all new backend technologies.Works in data analysis and information systems.",
-            "PT": "Um desenvolvedor que gosta de optimizar tudo, e pesquisar sobre as novas tendências em back-end. Trabalhos em análise de dados e sistemas de informação."
+            "PT": "Um desenvolvedor que gosta de optimizar tudo, e pesquisar sobre as novas tendências em back-end. Trabalhos em análise de dados e sistemas de informação.",
+            "FR": "Un nouveau développeur qui aime optimiser trucs et la recherche sur les toutes nouvelles technologies backend. Fonctionne dans les systèmes d’analyse et d’information de données."
+
         }
     },
     "education": {
         "keyword-title": {
             "EN": "Education",
-            "PT": "Formação"
+            "PT": "Formação",
+            "FR": "Formation"
         },
         "local": {
             "EN": "Campina Grande, Brazil",
-            "PT": "Campina Grande, Brasil"
+            "PT": "Campina Grande, Brasil",
+            "FR": "Campina Grande, Brésil"
         },
         "university": {
             "EN": "UFCG",
-            "PT": "UFCG"
+            "PT": "UFCG",
+            "FR": "UFCG"
         },
         "period": {
             "EN": "May 2013 --- Mar 2018",
-            "PT": "Mai 2013 --- Mar 2018"
+            "PT": "Mai 2013 --- Mar 2018",
+            "FR": "Mai 2013 --- Mars 2018"
         },
         "major": {
             "EN": "Bachelor in Computer Science",
-            "PT": "Bacharelado em Ciências da Computação"
+            "PT": "Bacharelado em Ciências da Computação",
+            "FR": "Baccalauréat en sciences informatiques"
         },
         "grade": {
-            "EN": "GPA: 7.55/10.0",
-            "PT": "CRA: 7.55/10.0"
+            "EN": "GPA: 7.52/10.0",
+            "PT": "CRA: 7.52/10.0",
+            "FR": "CRA: 7.52/10.0"
         }
     },
     "employment": {
         "keyword-title": {
             "EN": "Employment",
-            "PT": "Experiência"
+            "PT": "Experiência",
+            "FR": "Expérience professionnelle"
         },
         "works-n": 3,
         "works-npone": 4,
@@ -62,67 +85,82 @@
             {
                 "type": {
                     "EN": "PIBITI",
-                    "PT": "PIBITI"
+                    "PT": "PIBITI",
+                    "FR": "PIBITI"
                 },
                 "employer": {
                     "EN": "CNPq",
-                    "PT": "CNPq"
+                    "PT": "CNPq",
+                    "FR": "CNPq"
                 },
                 "period": {
                     "EN": "Nov 2013 --- Jul 2014",
-                    "PT": "Nov 2013 --- Jul 2014"
+                    "PT": "Nov 2013 --- Jul 2014",
+                    "FR": "Nov 2013 --- Juillet 2014"
                 },
                 "title": {
                     "EN": "Research on project `An approach to categorize nonconformances between Java code and JML contracts'",
-                    "PT": "Pesquisador no projeto `Uma abordagem para a categorização de não-conformidades entre código Java e contratos JML'"
+                    "PT": "Pesquisador no projeto `Uma abordagem para a categorização de não-conformidades entre código Java e contratos JML'",
+                    "FR": "Chercheur au projet 'Une approche à la catégorisation des non-conformités entre code Java et les contrats JML'"
                 },
                 "info": {
                     "EN": "Work on development of a tool (JMLOK 2.0) to categorize nonconformances in Java\/JML contract-based programs. Learned and used Java Swing and AST for JML during the project.",
-                    "PT": "Trabalhou no desenvolvimento de uma ferramenta (JMLOK 2.0) para categorizar não-conformidades em programas baseado em contratos em Java\/Jml. Aprendeu e utilizou Java Swing e AST para JML ao longo do projeto."
+                    "PT": "Trabalhou no desenvolvimento de uma ferramenta (JMLOK 2.0) para categorizar não-conformidades em programas baseado em contratos em Java\/Jml. Aprendeu e utilizou Java Swing e AST para JML ao longo do projeto.",
+                    "FR": "Il a travaillé sur l’élaboration d’un outil (JMLOK 2.0) pour classer les non-conformités au contrat des programmes en Java\/Jml. Savant et utilisé Java Swing et AST à JML tout au long du projet."
                 }
             },
             {
                 "type": {
                     "EN": "PIBIC",
-                    "PT": "PIBIC"
+                    "PT": "PIBIC",
+                    "FR": "PIBIC"
                 },
                 "employer": {
                     "EN": "CNPq",
-                    "PT": "CNPq"
+                    "PT": "CNPq",
+                    "FR": "CNPq"
                 },
                 "period": {
                     "EN": "Aug 2014 --- Jul 2015",
-                    "PT": "Ago 2014 --- Jul 2015"
+                    "PT": "Ago 2014 --- Jul 2015",
+                    "FR": "Août 2014 --- Juillet 2015"
                 },
                 "title": {
                     "EN": "Research on project `An approach to categorize nonconformances on contract-based programs'",
-                    "PT": "Pesquisador no projeto `Uma abordagem para a categorização de não-conformidades em programas baseados em contratos'"
+                    "PT": "Pesquisador no projeto `Uma abordagem para a categorização de não-conformidades em programas baseados em contratos'",
+                    "FR": "Chercheur au projet 'Une approche à la catégorisation des non-conformités dans les programmes fondés sur les contrats'"
                 },
                 "info": {
                     "EN": "Wrote a implementation of JMLOK 2.0 tool as a new tool (ContractOk), for categorization of C\\#/CodeContracts contract-based programs. A static analysis module was created to enhance nonconformances correction. Used mainly C\\# Windows Form, .NET compiler platform ('Roslyn') for code analysis and Randoop for test generation. ",
-                    "PT": "Escreveu uma implementação da ferramenta JMLOK 2.0 como uma nova ferramenta (ContractOK), para categorizar programas baseados em contratos escritos com C\\#/CodeContracts. Um módulo de análise estática foi desenvolvido para melhorar a correção de não-conformidades. Utilizou C\\# Windows Form, a plataforma .NET de compilação ('Roslyn') para análise de código e a ferramenta Randoop para geração automática de testes."
+                    "PT": "Escreveu uma implementação da ferramenta JMLOK 2.0 como uma nova ferramenta (ContractOK), para categorizar programas baseados em contratos escritos com C\\#/CodeContracts. Um módulo de análise estática foi desenvolvido para melhorar a correção de não-conformidades. Utilizou C\\# Windows Form, a plataforma .NET de compilação ('Roslyn') para análise de código e a ferramenta Randoop para geração automática de testes.",
+                    "FR": "A écrit une mise en œuvre de l’outil JMLOK 2.0 comme un nouvel outil (ContractOK), pour classer les programmes basés sur des contrats écrits avec C\\#/CodeContracts. Un module d’analyse statique a été développé pour améliorer la correction des non-conformités. Utilisé C\\# Windows Form, la plate-forme .NET pour construire ('Roslyn') pour l’analyse du code et Randoop outil de génération automatique de tests."
                 }
             },
             {
                 "type": {
                     "EN": "PIBIC",
-                    "PT": "PIBIC"
+                    "PT": "PIBIC",
+                    "FR": "PIBIC"
                 },
                 "employer": {
                     "EN": "CNPq",
-                    "PT": "CNPq"
+                    "PT": "CNPq",
+                    "FR": "CNPq"
                 },
                 "period": {
                     "EN": "Aug 2016-- - Jul 2017",
-                    "PT": "Ago 2016 --- Jul 2017"
+                    "PT": "Ago 2016 --- Jul 2017",
+                    "FR": "Août 2016 --- Juillet 2017"
                 },
                 "title": {
                     "EN": "Research on project `Developing mobile applications as a tool for control and monitoring of sanitary conditions on Federal University of Campina Grande (UFCG)'",
-                    "PT": "Pesquisador no projeto `O desenvolvimento de aplicativos móveis como ferramenta de apoio à identificação, monitoramento e controle de problemas nas condições sanitárias da Universidade Federal de Campina Grande (UFCG)'"
+                    "PT": "Pesquisador no projeto `O desenvolvimento de aplicativos móveis como ferramenta de apoio à identificação, monitoramento e controle de problemas nas condições sanitárias da Universidade Federal de Campina Grande (UFCG)'",
+                    "FR": "Chercheur au projet 'Le développement d’applications mobiles comme un outil visant à appuyer l’identification, de surveillance et de contrôle des problèmes d’hygiène de l’Universidade Federal de Campina Grande (UFCG)'"
                 },
                 "info": {
                     "EN": "Created Inspetor Mups, an Android app for collecting data on sanitary problems on the Federal University of Campina Grande (UFCG) campus. App was produced using Meteor framework as back-end, with Javascript. App interface was created using Cordova with AngularJs as front-end, following Material Design guidelines.",
-                    "PT": "Criou o aplicativo Inspetor Mups para Android, uma ferramenta para coletar registros de problemas sanitários na Universidade Federal de Campina Grande (UFCG). O aplicativo foi produzido utilizando a framework Meteor como back-end, usando Javascript. A interface do aplicativo foi feita utilizando Cordova com AngularJs como front-end, seguindo o padrão Material Design."
+                    "PT": "Criou o aplicativo Inspetor Mups para Android, uma ferramenta para coletar registros de problemas sanitários na Universidade Federal de Campina Grande (UFCG). O aplicativo foi produzido utilizando a framework Meteor como back-end, usando Javascript. A interface do aplicativo foi feita utilizando Cordova com AngularJs como front-end, seguindo o padrão Material Design.",
+                    "FR": "Créé à la demande de l’inspecteur de Mups pour Android, un outil pour collecter les enregistrements de problèmes de santé à l’Université fédérale de Campina Grande (UFCG). L’application fabriquée à partir de météore comme cadre principal, à l’aide de Javascript. L’interface de l’application faite à l’aide de Cordova, front end, suivant le matériel de conception standard avec AngularJs."
                 }
             }
         ]
@@ -130,15 +168,18 @@
     "skills": {
         "keyword-title": {
             "EN": "Skills",
-            "PT": "Habilidades Técnicas"
+            "PT": "Habilidades Técnicas",
+            "FR": "Compétences spécifiques"
         },
         "keyword-strong": {
             "EN": "Strong",
-            "PT": "Principais"
+            "PT": "Principais",
+            "FR": "Forte"
         },
         "keyword-knowledgeable": {
             "EN": "Knowledgeable",
-            "PT": "Experiente"
+            "PT": "Experiente",
+            "FR": "Bien informés"
         },
         "strong": "Java, C\\#, Go, Python, ES6, Git, R, Angular, MongoDB",
         "knowledgeable": "SQL, Meteor, Cordova, Play, LESS, C++, C, TDD, BDD, Unity"

@@ -25,8 +25,8 @@
 \NewDocumentEnvironment{loadinfo}{m}{%
    \luadirect{load_info ('#1')}%
     
-    \newcommand{\ctcname}[1] {
-        \luadirect{tex.print (table['contact']['name'][##1])}\ignorespaces%
+    \newcommand{\ctcname}[2] {
+        \luadirect{tex.print (table['contact']['name']['##1'][##2])}\ignorespaces%
     }
 
     \newcommand{\ctccellphone} {

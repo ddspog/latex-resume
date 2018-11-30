@@ -89,7 +89,7 @@
                     \ctccity,\ctcstate,\ctccountry{\cv@lang}\\%
                 }
             }{
-                \LARGE{\textbf{\ctcname{3}}}
+                \LARGE{\textbf{\ctcname{\cv@lang}{3}}}
             }{
                 \small{%
                     \ctccellphone{}\\
